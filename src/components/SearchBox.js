@@ -58,6 +58,7 @@ export default function SearchBox({ setFlightsSearchResult, setSearchingHome }) 
 
   const findFlights = async () => {
     try {
+      setFlightsSearchResult([]);
       setSearching(true);
       setSearchingHome(true);
       if (direction === ONEWAY) {
